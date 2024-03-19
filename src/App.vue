@@ -1,30 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <navigation-list></navigation-list>
+  <main>
+    <router-view></router-view>
+  </main>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import NavigationList from "./components/NavigationList.vue";
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+export default {
+  name: "App",
+  components: {
+    NavigationList,
+  },
+  data() {
+    return {
+      routes: [
+        { path: "/", name: "Overview", icon: "home" },
+        { path: "/", name: "Competition", icon: "runner" },
+        { path: "/", name: "Timer", icon: "clock" },
+        { path: "/", name: "Energy", icon: "coffee" },
+        { path: "/", name: "Calendar", icon: "event" },
+        { path: "/", name: "Distances", icon: "info" },
+        { path: "/", name: "Profilo", icon: "user" },
+        { path: "/", name: "Settings", icon: "preferences" },
+      ],
+    };
+  },
+};
+</script>

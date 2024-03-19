@@ -1,0 +1,27 @@
+{
+  "coveredDistanceSource": [{ "value": "distance", "name": "Distance" }],
+  "distanceDataSource": [
+    { "distances": "1", "distance": 0.6 },
+    { "distances": "2", "distance": 0.4 },
+    { "distances": "3", "distance": 1.3 },
+    { "distances": "4", "distance": 0.8 },
+    { "distances": "5", "distance": 1.1 },
+    { "distances": "6", "distance": 0.3 },
+    { "distances": "7", "distance": 1.1 }
+  ],
+  "weekDataSource": [
+    { "day": "Mon", "time": 3 },
+    { "day": "Tue", "time": 2 },
+    { "day": "Wed", "time": 3 },
+    { "day": "Thr", "time": 4 },
+    { "day": "Fri", "time": 6 },
+    { "day": "Sat", "time": 11 },
+    { "day": "Sun", "time": 4 }
+  ],
+  "activities": {
+    "time": "56 m",
+    "totalDistance": "15 h 5km",
+    "energyBurn": "1345 kal",
+    "sleep": "56 m"
+  }
+}
